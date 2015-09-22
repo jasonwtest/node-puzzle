@@ -17,6 +17,6 @@ exports.decrypt = (string, secret = 1) ->
     if code <= 41
       de_result += char
     else
-      de_result += String.fromCharCode(code - secret)
+      de_result += String.fromCharCode(code + secret)
 
   return de_result
